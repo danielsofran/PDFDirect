@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="PDFDirect.exe" version="1.0.0.2" publicKeyToken="3d66b1b4b57ff026" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="pdf.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="PDFDirect" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="PDFDirect.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Aspose.PDF.dll" size="39250592">
+      <assemblyIdentity name="Aspose.PDF" version="21.10.0.0" publicKeyToken="F0262D67FE233D63" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>m+1aO8ah9cTDQtF8E7Ct5n5+8EWlT/r3cC3xZbHsbHE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PDFDirect.exe" size="69096">
+      <assemblyIdentity name="PDFDirect" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>LhUhN23SuKN/KOxA7tZNHMvU8OsvjduxbyvWYNwyr7s=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="pdf.ico" size="16958">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>k5aTefrlYkcVyp797aGl2cW7XFwQOoTlJYUY9pQieu0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="PDFDirect.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-3NM7RGB\Daniel" issuerKeyHash="3b64effff6686affa1ed798832f957106363c734" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>rh2xu6gJ7Ok8WpCp5AkwGzMR+eLVZET3yrUnflETUcY=</DigestValue></Reference></SignedInfo><SignatureValue>fNt2GEIiwCtWlU+UGtubNQo2whDS/aoeOvy2j6lOAMyCbGuxD8wFstzSZQw5pOYzIuskoQnQXB/qq3wl2+85x2r/DT79JZrcpVwOpNfkegGBxEdstyymzVZJzTwmcoV3IfzKM03qygBFnekR7cq/8UmPJ3qKyftJ/nagPBR3WUE=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>r1fpnuhftNp4snbBh26pygUDF5dX93M/77omCvz9C4hnemVc0TI9+ZD56iRVu2nHY4Ux5/ZwJtDKFNTNXLY2v8BmsbLwZ0e0Euujv7gua7M86r7XCIUet3POj6oqPAlQUEwOt3Py9l2ebZJmpliYIXw44ZHEl4g6nUNFsYKgm4k=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="c65113517e27b5caf74464d5e2f911331b3009e4a9905a3ce9ec09a8bbb11dae" Description="" Url=""><as:assemblyIdentity name="PDFDirect.exe" version="1.0.0.2" publicKeyToken="3d66b1b4b57ff026" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-3NM7RGB\Daniel</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>ejhjvoGvUeI7/s0LzgvOrGGw7lJw6b5ibzO03SI8x2E=</DigestValue></Reference></SignedInfo><SignatureValue>Dcbvgr5wucyYr3T83KpjhbINcIuWrNnufoxQA7e+6KcGxYNtITQGJDMaKYdkll/myGOor+5Pvz3tvhQJx9IYMN24vg/N3dAxpjlcTMPTQUDOqCJEm+MFt7VKe4+7/DO6RX5uRO2dcimi95NvI+o7am4UgchVPDFJPRDe0GzCS80=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>r1fpnuhftNp4snbBh26pygUDF5dX93M/77omCvz9C4hnemVc0TI9+ZD56iRVu2nHY4Ux5/ZwJtDKFNTNXLY2v8BmsbLwZ0e0Euujv7gua7M86r7XCIUet3POj6oqPAlQUEwOt3Py9l2ebZJmpliYIXw44ZHEl4g6nUNFsYKgm4k=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB8TCCAVqgAwIBAgIQHEwGCKcBm7FIWJkvuH7YkzANBgkqhkiG9w0BAQsFADA3MTUwMwYDVQQDHiwARABFAFMASwBUAE8AUAAtADMATgBNADcAUgBHAEIAXABEAGEAbgBpAGUAbDAeFw0yMTEwMjUxNTUyMTBaFw0yMjEwMjUyMTUyMTBaMDcxNTAzBgNVBAMeLABEAEUAUwBLAFQATwBQAC0AMwBOAE0ANwBSAEcAQgBcAEQAYQBuAGkAZQBsMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCvV+me6F+02niydsGHbqnKBQMXl1f3cz/vuiYK/P0LiGd6ZVzRMj35kPnqJFW7acdjhTHn9nAm0MoU1M1ctja/wGaxsvBnR7QS66O/uC5rszzqvtcIhR63c86Pqio8CVBQTA63c/L2XZ5tkmamWJghfDjhkcSXiDqdQ0WxgqCbiQIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAEVY1JIe1Wx4Oo/BuWokvkbzmwydcuPB9vABsT6USb63E8t2sLi1jO1NslF76ZQNpx+Htd/lhQZHRKiPpckL7QQRPZ5hYaSEcURDnfnCPfAiAEIZ+Xz7VlM3QBeBt4uyYstX9vwnahgpsYcbKnJ9vzbdOdoBbeebTD/QD6aUy7N8</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
